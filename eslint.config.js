@@ -1,4 +1,5 @@
-"use strict";
+import globals from "globals";
+("use strict");
 
 const js = require("@eslint/js");
 const importPlugin = require("eslint-plugin-import");
@@ -10,7 +11,8 @@ module.exports = [
   {
     files: ["**/*.js"],
     languageOptions: {
-      ecmaVersion: 2022,
+      globals: { ...globals.node },
+      ecmaVersion: "latest",
       sourceType: "commonjs",
     },
     plugins: {
