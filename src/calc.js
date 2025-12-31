@@ -17,7 +17,7 @@ function kWhPerUseFromPower(powerW, hoursPerUse) {
  * @returns {number}
  */
 function annualEnergyKWh(kWhPerUse, usesPerWeek) {
-  return kWhPerUse * usesPerWeek * 50;
+  return kWhPerUse * usesPerWeek * 52;
 }
 
 /**
