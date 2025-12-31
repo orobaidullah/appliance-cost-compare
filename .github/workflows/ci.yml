@@ -22,11 +22,16 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Prepare reports folder
-        run: mkdir -p reports
-
-      - name: Lint
-        run: npm run lint
+      # - name: Lint
+      #   run: npm run lint
+      - name: Lint (print output + save json)
+        run: |
+          mkdir -p reports
+          set +e
+          npx eslint . --max-warnings=0 -f stylish
+          STATUS=$?
+          npx eslint . --max-warnings=0 -f json -o reports/eslint.json || true
+          exit $STATUS
 
       - name: Unit tests + coverage
         run: npm run test:coverage
