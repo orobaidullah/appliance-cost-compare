@@ -1,36 +1,36 @@
-'use strict';
+"use strict";
 
-const js = require('@eslint/js');
-const importPlugin = require('eslint-plugin-import');
-const sonarjs = require('eslint-plugin-sonarjs');
-const unicorn = require('eslint-plugin-unicorn');
+const js = require("@eslint/js");
+const importPlugin = require("eslint-plugin-import");
+const sonarjs = require("eslint-plugin-sonarjs");
+const unicorn = require("eslint-plugin-unicorn");
 
 module.exports = [
   js.configs.recommended,
   {
-    files: ['**/*.js'],
+    files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: 2022,
-      sourceType: 'commonjs'
+      sourceType: "commonjs",
     },
     plugins: {
       import: importPlugin,
       sonarjs,
-      unicorn
+      unicorn,
     },
     rules: {
-      'no-console': 'off',
-      'sonarjs/no-duplicate-string': 'off',
-      'unicorn/prefer-module': 'off',
-      'unicorn/prefer-node-protocol': 'error',
-      'unicorn/no-process-exit': 'off',
-      'complexity': ['warn', 8]
-    }
+      "no-console": "off",
+      "sonarjs/no-duplicate-string": "off",
+      "unicorn/prefer-module": "off",
+      "unicorn/prefer-node-protocol": "error",
+      "unicorn/no-process-exit": "off",
+      complexity: ["warn", 8],
+    },
   },
   {
-    files: ['test/**/*.js'],
+    files: ["test/**/*.js"],
     rules: {
-      'no-undef': 'off'
-    }
-  }
+      "no-undef": "off",
+    },
+  },
 ];

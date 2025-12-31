@@ -11,7 +11,7 @@
     "start": "node src/index.js",
     "test": "jest",
     "test:coverage": "jest --coverage --coverageDirectory=reports/coverage",
-    "lint": "node -e \"require('fs').mkdirSync('reports',{recursive:true})\" && eslint . --max-warnings=0 --format json --output-file reports/eslint.json",
+    "lint": "node reports/eslint.json",
     "mutation": "stryker run",
     "metrics": "node scripts/metrics.js",
     "smells": "node scripts/smells-summary.js",
