@@ -1,0 +1,18 @@
+{
+  "electricityPricePerKWh": 0.35,
+  "years": 10,
+  "applianceA": {
+    "name": "Washing Machine A",
+    "purchasePrice": 499,
+    "powerW": 900,
+    "hoursPerUse": 1.5,
+    "usesPerWeek": 5
+  },
+  "applianceB": {
+    "name": "Washing Machine B",
+    "purchasePrice": 399,
+    "powerW": 1100,
+    "hoursPerUse": 1.5,
+    "usesPerWeek": 5
+  }
+}

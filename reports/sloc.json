@@ -1,0 +1,65 @@
+{
+  "total": {
+    "source": 286,
+    "comment": 45,
+    "empty": 64,
+    "total": 395
+  },
+  "byFile": {
+    "src\\calc.js": {
+      "total": 86,
+      "source": 45,
+      "comment": 32,
+      "single": 0,
+      "block": 32,
+      "mixed": 0,
+      "empty": 9,
+      "todo": 0,
+      "blockEmpty": 0
+    },
+    "src\\index.js": {
+      "total": 81,
+      "source": 54,
+      "comment": 11,
+      "single": 2,
+      "block": 9,
+      "mixed": 0,
+      "empty": 16,
+      "todo": 0,
+      "blockEmpty": 0
+    },
+    "test\\calc.test.js": {
+      "total": 55,
+      "source": 44,
+      "comment": 1,
+      "single": 1,
+      "block": 0,
+      "mixed": 0,
+      "empty": 10,
+      "todo": 0,
+      "blockEmpty": 0
+    },
+    "scripts\\metrics.js": {
+      "total": 107,
+      "source": 87,
+      "comment": 1,
+      "single": 1,
+      "block": 0,
+      "mixed": 0,
+      "empty": 19,
+      "todo": 0,
+      "blockEmpty": 0
+    },
+    "scripts\\smells-summary.js": {
+      "total": 66,
+      "source": 56,
+      "comment": 0,
+      "single": 0,
+      "block": 0,
+      "mixed": 0,
+      "empty": 10,
+      "todo": 0,
+      "blockEmpty": 0
+    }
+  }
+}

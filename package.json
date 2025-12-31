@@ -1,0 +1,44 @@
+{
+  "name": "appliance-cost-compare",
+  "version": "1.0.0",
+  "description": "CLI app to compare total costs of two domestic appliances (purchase + electricity).",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "appliance-cost-compare": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage --coverageDirectory=reports/coverage",
+    "lint": "eslint . --max-warnings=0 --format json --output-file reports/eslint.json",
+    "mutation": "stryker run",
+    "metrics": "node scripts/metrics.js",
+    "smells": "node scripts/smells-summary.js",
+    "build": "npm run lint && npm run test:coverage && npm run metrics && npm run smells",
+    "clean": "rimraf reports/coverage reports/complexity.json reports/sloc.json reports/metrics-summary.md reports/smells-summary.md reports/eslint.json",
+    "ci": "npm run build && npm run mutation"
+  },
+  "keywords": [
+    "cli",
+    "node",
+    "energy",
+    "cost",
+    "compare"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@stryker-mutator/core": "^9.0.0",
+    "@stryker-mutator/jest-runner": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-sonarjs": "^2.0.0",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "jest": "^30.0.0",
+    "rimraf": "^6.0.1",
+    "sloc": "^0.3.2",
+    "typhonjs-escomplex": "^0.1.0"
+  }
+}

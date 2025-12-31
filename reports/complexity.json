@@ -1,0 +1,268 @@
+{
+  "src\\calc.js": {
+    "aggregate": {
+      "cyclomatic": 8,
+      "cyclomaticDensity": 17.021,
+      "halstead": {
+        "bugs": 0.343,
+        "difficulty": 23.158,
+        "effort": 23855.523,
+        "length": 179,
+        "time": 1325.307,
+        "vocabulary": 54,
+        "volume": 1030.125,
+        "operands": {
+          "distinct": 38,
+          "total": 110,
+          "identifiers": [
+            "kWhPerUseFromPower",
+            "powerW",
+            "hoursPerUse",
+            "1000",
+            "annualEnergyKWh",
+            "kWhPerUse",
+            "usesPerWeek",
+            "52",
+            "annualEnergyCost",
+            "electricityPricePerKWh",
+            "totalCost",
+            "appliance",
+            "scenario",
+            "yearlyKWh",
+            "yearlyEnergyCost",
+            "totalEnergyCost",
+            "years",
+            "total",
+            "purchasePrice",
+            "purchaseCost",
+            "compare",
+            "a",
+            "b",
+            "A",
+            "B",
+            "diff",
+            "cheaper",
+            "\"equal\"",
+            "0",
+            "\"A\"",
+            "\"B\"",
+            "difference",
+            "Math",
+            "abs",
+            "totals",
+            "module",
+            "exports",
+            "\"use strict\""
+          ]
+        },
+        "operators": {
+          "distinct": 16,
+          "total": 69,
+          "identifiers": [
+            "function",
+            "return",
+            "*",
+            "/",
+            "()",
+            "const",
+            "=",
+            ".",
+            "+",
+            "{}",
+            ":",
+            "-",
+            "let",
+            "if",
+            "<",
+            ">"
+          ]
+        }
+      },
+      "paramCount": 12,
+      "sloc": {
+        "logical": 47,
+        "physical": 87
+      }
+    },
+    "methods": [
+      {
+        "name": "kWhPerUseFromPower",
+        "cyclomatic": 1
+      },
+      {
+        "name": "annualEnergyKWh",
+        "cyclomatic": 1
+      },
+      {
+        "name": "annualEnergyCost",
+        "cyclomatic": 1
+      },
+      {
+        "name": "totalCost",
+        "cyclomatic": 1
+      },
+      {
+        "name": "compare",
+        "cyclomatic": 3
+      }
+    ]
+  },
+  "src\\index.js": {
+    "aggregate": {
+      "cyclomatic": 9,
+      "cyclomaticDensity": 13.433,
+      "halstead": {
+        "bugs": 0.894,
+        "difficulty": 23.75,
+        "effort": 63690.146,
+        "length": 397,
+        "time": 3538.341,
+        "vocabulary": 108,
+        "volume": 2681.69,
+        "operands": {
+          "distinct": 88,
+          "total": 209,
+          "identifiers": [
+            "fs",
+            "require",
+            "\"node:fs\"",
+            "compare",
+            "\"./calc\"",
+            "readStdin",
+            "readFileSync",
+            "0",
+            "\"utf8\"",
+            "trim",
+            "formatMoneyEUR",
+            "amount",
+            "Intl",
+            "NumberFormat",
+            "\"de-DE\"",
+            "style",
+            "\"currency\"",
+            "currency",
+            "\"EUR\"",
+            "format",
+            "formatNumber",
+            "n",
+            "digits",
+            "2",
+            "minimumFractionDigits",
+            "maximumFractionDigits",
+            "main",
+            "raw",
+            "input",
+            "JSON",
+            "parse",
+            "scenario",
+            "electricityPricePerKWh",
+            "years",
+            "a",
+            "applianceA",
+            "b",
+            "applianceB",
+            "result",
+            "nameA",
+            "name",
+            "\"Appliance A\"",
+            "nameB",
+            "\"Appliance B\"",
+            "pretty",
+            "totals",
+            "A",
+            "B",
+            "cheaper",
+            "\"A\"",
+            "\"B\"",
+            "\"equal\"",
+            "difference",
+            "process",
+            "stdout",
+            "write",
+            "Scenario: electricity ",
+            " per kWh, duration ",
+            " years\n\n",
+            "label",
+            "item",
+            "'A'",
+            "'B'",
+            ") ",
+            "\n",
+            "purchaseCost",
+            "   Purchase:       ",
+            "kWhPerUse",
+            "   kWh per use:    ",
+            " kWh\n",
+            "yearlyKWh",
+            "   kWh per year:   ",
+            "yearlyEnergyCost",
+            "   Energy / year:  ",
+            "totalEnergyCost",
+            "   Energy total:   ",
+            "totalCost",
+            "   TOTAL:          ",
+            "\n\n",
+            "\"Result: Both appliances have equal total cost.\n\"",
+            "cheaperName",
+            "Result: Cheaper is ",
+            " by ",
+            " over ",
+            " years.\n",
+            "stringify",
+            "\nJSON_RESULT=",
+            "\"use strict\""
+          ]
+        },
+        "operators": {
+          "distinct": 20,
+          "total": 188,
+          "identifiers": [
+            "const",
+            "=",
+            "()",
+            "{}",
+            "function",
+            "return",
+            ".",
+            "new",
+            ":",
+            "??",
+            "... (spread)",
+            ":?",
+            "===",
+            "``",
+            "${}",
+            "forof",
+            "[]",
+            ",",
+            "if",
+            "else"
+          ]
+        }
+      },
+      "paramCount": 3,
+      "sloc": {
+        "logical": 67,
+        "physical": 82
+      }
+    },
+    "methods": [
+      {
+        "name": "readStdin",
+        "cyclomatic": 1
+      },
+      {
+        "name": "formatMoneyEUR",
+        "cyclomatic": 1
+      },
+      {
+        "name": "formatNumber",
+        "cyclomatic": 1
+      },
+      {
+        "name": "main",
+        "cyclomatic": 5
+      }
+    ]
+  }
+}
