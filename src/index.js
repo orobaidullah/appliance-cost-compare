@@ -1,18 +1,9 @@
-#!/usr/bin/env node
 'use strict';
 
 const fs = require('node:fs');
 const { compare } = require('./calc');
 
-/**
- * Input format (JSON):
- * {
- *   "electricityPricePerKWh": 0.35,
- *   "years": 10,
- *   "applianceA": { "name": "...", "purchasePrice": 499, "powerW": 900, "hoursPerUse": 1.5, "usesPerWeek": 5 },
- *   "applianceB": { "name": "...", "purchasePrice": 399, "powerW": 1100, "hoursPerUse": 1.5, "usesPerWeek": 5 }
- * }
- */
+
 
 function readStdin() {
   return fs.readFileSync(0, 'utf8').trim();
