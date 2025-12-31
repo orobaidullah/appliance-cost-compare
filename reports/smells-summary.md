@@ -1,6 +1,6 @@
 # Bad Smells Summary
 
-Generated: 2025-12-31T01:12:19.910Z
+Generated: 2025-12-31T04:40:32.098Z
 
 This project uses ESLint + plugins (sonarjs, unicorn, import) as an automated smell detector.
 
